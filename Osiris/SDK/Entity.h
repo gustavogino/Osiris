@@ -84,7 +84,7 @@ public:
     constexpr Vector getEyePosition() noexcept
     {
         Vector vec{ };
-        callVirtualMethod<void, Vector&>(this, 281, vec);
+        callVirtualMethod<void, Vector&>(this, 282, vec);
         return vec;
     }
 
@@ -123,7 +123,7 @@ public:
 
     constexpr bool isWeapon() noexcept
     {
-        return callVirtualMethod<bool>(this, 163);
+        return callVirtualMethod<bool>(this, 164);
     }
 
     constexpr ClientClass* getClientClass() noexcept
@@ -138,12 +138,12 @@ public:
 
     constexpr bool isPlayer() noexcept
     {
-        return callVirtualMethod<bool>(this, 155);
+        return callVirtualMethod<bool>(this, 156);
     }
 
     constexpr Entity* getActiveWeapon() noexcept
     {
-        return callVirtualMethod<Entity*>(this, 265);
+        return callVirtualMethod<Entity*>(this, 266);
     }
 
     constexpr int getWeaponSubType() noexcept
@@ -153,12 +153,12 @@ public:
 
     constexpr WeaponData* getWeaponData() noexcept
     {
-        return callVirtualMethod<WeaponData*>(this, 454);
+        return callVirtualMethod<WeaponData*>(this, 455);
     }
 
     constexpr float getInaccuracy() noexcept
     {
-        return callVirtualMethod<float>(this, 476);
+        return callVirtualMethod<float>(this, 478);
     }
     
     VarMap* getVarMap() noexcept
